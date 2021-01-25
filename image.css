@@ -1,0 +1,89 @@
+/*BLUR EFFECT SECTION*/
+.container_all_main_1 {
+background-image: url("img/wizytowka_blur.png");         
+}
+
+.container_all_main_2 {
+background-image: 
+url("img/creativevalley_blur.png");
+}
+
+.container_all_main_3 {
+background-image: 
+url("img/vertcore_blur.png");
+}
+
+.container_all_main_4 {
+background-image: 
+url("img/banerpolsl_blur.png");
+}
+
+.container_all_main_5 {
+background-image: 
+url("img/creativevalley_grafika_blur.png");
+}
+
+.container_all_main_6 {
+background-image: 
+url("img/vertcorelogo_blur.png");
+}
+
+.container_all_main_7 {
+background-image: 
+url("img/digititleslogo_blur.png");
+}
+
+.container_all_main_8 {
+background-image: 
+url("img/logopolsl_blur.png");
+}
+
+/*NORMAL EFFECT SECTION*/
+.container_all_active_1 {
+background-image: url("img/wizytowka.png");   
+}
+
+.container_all_active_2 {
+background-image: url("img/creativevalley.png");   
+}
+
+.container_all_active_3 {
+background-image: 
+url("img/vertcore.png");
+}
+
+.container_all_active_4 {
+background-image: 
+url("img/banerpolsl.png");
+}
+
+.container_all_active_5 {
+background-image: 
+url("img/creativevalley_grafika.png");
+}
+
+.container_all_active_6 {
+background-image: 
+url("img/vertcorelogo.png");
+}
+
+.container_all_active_7 {
+background-image: 
+url("img/digititleslogo.png");
+}
+
+.container_all_active_8 {
+background-image: 
+url("img/logopolsl.png");
+}
+
+#particles-js {
+position: absolute;
+top:-40px;
+z-index: -4;
+position: fixed;
+width: 100%;
+height: 100%;
+background: transparent;
+opacity: 0.5 !important;
+}

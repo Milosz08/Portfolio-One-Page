@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8"/>
+    <title>Miłosz Gilga</title>
+    <link rel="icon" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="backgroundstyle.css"/>
+    <link rel="stylesheet" href="image.css"/>
+    <link href="hamburgers.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>      
+    <!--START OF JQUERY & JS SECTION-->
+    <script name="pop_up_down_circre_description">
+        //CIRCLE DESCRIPTION TOGGLE POP UP/DOWN JS SCRIPT
+        function showhideFunc_html() {
+            var x = document.getElementById("menu2");
+            if (x.style.opacity != "1") {x.style.opacity = "1";} else {x.style.opacity = "0";} }
+        function showhideFunc_css() {
+            var x = document.getElementById("menu3");
+            if (x.style.opacity != "1") {x.style.opacity = "1";} else {x.style.opacity = "0";} }
+        function showhideFunc_js() {
+            var x = document.getElementById("menu4");
+            if (x.style.opacity != "1") {x.style.opacity = "1";} else {x.style.opacity = "0";} }
+        function showhideFunc_adobe() {
+            var x = document.getElementById("menu5");
+            if (x.style.opacity != "1") {x.style.opacity = "1";} else {x.style.opacity = "0";} }
+    </script>
+        <script name="icon_arrow_up_down_circle_description">
+            //DOUBLE ARROW UP/DOWN TOGGLE JS SCRIPT (ABILITIES)
+            function toggleIcon1(x) {x.classList.toggle("fa-angle-double-up") ;}
+            //DOUBLE ARROW LEFT/RIGHT TOGGLE JS SCRIPT (MENU)
+            function toggleIcon2(x) {x.classList.toggle("fa-angle-double-right") ;}
+        </script>
+    <script name="hide_show_portfolio_div">
+        //SHOW/HIDE PORTFOLIO JQUERY JS SCRIPT   
+        $(document).ready(function() { 
+            $('.var2_por').click(function() {
+                $('.cont_5').hide(); $('.cont_6').hide();
+                $('.cont_7').hide(); $('.cont_8').hide();
+                $('.cont_9').hide(); $('.cont_10').hide();
+                $('.cont_11').hide(); $('.cont_12').hide(); 
+                $('.cont_1').show(); $('.cont_2').show();
+                $('.cont_3').show(); $('.cont_4').hide(); 
+                    $('.underline_anim1').slideUp(400); $('.underline_anim2').slideDown(400);
+                    $('.underline_anim3').slideUp(400); $('.underline_anim4').slideUp(400);
+                }); //-------------------------------------
+            $('.var3_por').click(function() {
+                $('.cont_1').hide(); $('.cont_2').hide();
+                $('.cont_3').hide(); $('.cont_4').show();
+                $('.cont_9').hide(); $('.cont_10').hide();
+                $('.cont_11').hide(); $('.cont_12').hide();
+                $('.cont_5').show(); $('.cont_6').show();
+                $('.cont_7').show(); $('.cont_8').show(); 
+                    $('.underline_anim1').slideUp(400); $('.underline_anim2').slideUp(400);
+                    $('.underline_anim3').slideDown(400); $('.underline_anim4').slideUp(400);
+                }); //-------------------------------------
+            $('.var4_por').click(function() {
+                $('.cont_1').hide(); $('.cont_2').hide();
+                $('.cont_3').hide(); $('.cont_4').hide();
+                $('.cont_5').hide(); $('.cont_6').hide();
+                $('.cont_7').hide(); $('.cont_8').hide();
+                $('.cont_9').show(); $('.cont_10').show();
+                $('.cont_11').show(); $('.cont_12').show();
+                    $('.underline_anim1').slideUp(400); $('.underline_anim2').slideUp(400);
+                    $('.underline_anim3').slideUp(400); $('.underline_anim4').slideDown(400);
+                }); //-------------------------------------
+            $('.var1_por').click(function() {
+                $('.cont_1').show(); $('.cont_2').show();
+                $('.cont_3').show(); $('.cont_4').show();
+                $('.cont_5').show(); $('.cont_6').show();
+                $('.cont_7').show(); $('.cont_8').show();
+                $('.cont_9').show(); $('.cont_10').show();
+                $('.cont_11').show(); $('.cont_12').show();
+                    $('.underline_anim1').slideDown(400); $('.underline_anim2').slideUp(400);
+                    $('.underline_anim3').slideUp(400); $('.underline_anim4').slideUp(400);
+                }); 
+            });
+    </script>
+    <script name="hide_show_portfolio_div">
+        //SHOW/HIDE DESCRIPTION IN PORTFOLIO JQUERY JS SCRIPT  
+        $(document).ready(function() {
+            $('.cont_1').click(function() {
+                $('.cont_1_desc').slideToggle(600); 
+                $('.container_all_main_1').toggleClass("container_all_active_1"); }); 
+            $('.cont_2').click(function() {
+                $('.cont_2_desc').slideToggle(600); 
+                $('.container_all_main_2').toggleClass("container_all_active_2"); }); 
+            $('.cont_3').click(function() {
+                $('.cont_3_desc').slideToggle(600); 
+                $('.container_all_main_3').toggleClass("container_all_active_3"); }); 
+            $('.cont_4').click(function() {
+                $('.cont_4_desc').slideToggle(600); 
+                $('.container_all_main_4').toggleClass("container_all_active_4"); });
+            $('.cont_5').click(function() {
+                $('.cont_5_desc').slideToggle(600); 
+                $('.container_all_main_5').toggleClass("container_all_active_5"); });
+            $('.cont_6').click(function() {
+                $('.cont_6_desc').slideToggle(600); 
+                $('.container_all_main_6').toggleClass("container_all_active_6"); });
+            $('.cont_7').click(function() {
+                $('.cont_7_desc').slideToggle(600); 
+                $('.container_all_main_7').toggleClass("container_all_active_7"); });
+            $('.cont_8').click(function() {
+                $('.cont_8_desc').slideToggle(600);
+                $('.container_all_main_8').toggleClass("container_all_active_8"); });
+            $('.cont_9').click(function() {
+                $('.cont_9_desc').slideToggle(600); 
+                $('.container_all_main_9').toggleClass("container_all_active_9"); });
+            $('.cont_10').click(function() {
+                $('.cont_10_desc').slideToggle(600); 
+                $('.container_all_main_10').toggleClass("container_all_active_10"); });
+            $('.cont_11').click(function() {
+                $('.cont_11_desc').slideToggle(600); 
+                $('.container_all_main_11').toggleClass("container_all_active_11"); });
+            $('.cont_12').click(function() {
+                $('.cont_12_desc').slideToggle(600); 
+                $('.container_all_main_12').toggleClass("container_all_active_12"); });
+        });
+    </script>
+    <script name="small_menu_show_hide_description">
+        //SHOW/HIDE SMALL MENU DESCRIPTION (UP TO DOWN) JQUERY JS SCRIPT
+        $(document).ready(function() {
+            $('.arrow_onclick').click(function() {
+                $('.small_menu2').toggleClass("small_menu2_active"); }); });
+        //CHANGE COLOR IN MENU ICONS ON HOVER JQUERY JS SCRIPT 
+        $(document).ready(function() {
+            $('.menu_start').hover(function() {
+                $('.menu_start_txt').toggleClass("menu_green_hover"); });
+            $('.menu_abilities').hover(function() {
+                $('.menu_abilities_txt').toggleClass("menu_green_hover"); }); 
+            $('.menu_services').hover(function() {
+                $('.menu_services_txt').toggleClass("menu_green_hover"); });
+            $('.menu_aboutme').hover(function() {
+                $('.menu_aboutme_txt').toggleClass("menu_green_hover"); });
+            $('.menu_portfolio').hover(function() {
+                $('.menu_portfolio_txt').toggleClass("menu_green_hover"); });
+            $('.menu_form').hover(function() {
+                $('.menu_form_txt').toggleClass("menu_green_hover"); });
+            $('.menu_contact').hover(function() {
+                $('.menu_contact_txt').toggleClass("menu_green_hover"); });
+            //REVERSE ICON/TXT
+            $('.menu_start_txt').hover(function() {
+                $('.menu_start').toggleClass("menu_green_hover"); });
+            $('.menu_abilities_txt').hover(function() {
+                $('.menu_abilities').toggleClass("menu_green_hover"); }); 
+            $('.menu_services_txt').hover(function() {
+                $('.menu_services').toggleClass("menu_green_hover"); });
+            $('.menu_aboutme_txt').hover(function() {
+                $('.menu_aboutme').toggleClass("menu_green_hover"); });
+            $('.menu_portfolio_txt').hover(function() {
+                $('.menu_portfolio').toggleClass("menu_green_hover"); });
+            $('.menu_form_txt').hover(function() {
+                $('.menu_form').toggleClass("menu_green_hover"); });
+            $('.menu_contact_txt').hover(function() {
+                $('.menu_contact').toggleClass("menu_green_hover"); });
+        });
+    </script>
+        <script>
+            //SCROLL TO ELEMENT JQUERY JS SCRIPT
+            jQuery(function($) {
+                $.scrollTo(0); //SCROLL RESET
+                //MAIN MENU SCROLLING
+                $('.menu_start').click(function() {$.scrollTo($('body'), 1000);});
+                $('.menu_abilities').click(function() {$.scrollTo($('.abilities_scroll'), 1000);});
+                $('.menu_services').click(function() {$.scrollTo($('.services_scroll'), 1000);});
+                $('.menu_aboutme').click(function() {$.scrollTo($('.aboutme_scroll'), 1000);});
+                $('.menu_portfolio').click(function() {$.scrollTo($('.portfolio_scroll'), 1000);});
+                $('.menu_form').click(function() {$.scrollTo($('.form_scroll'), 1000);});
+                $('.menu_contact').click(function() {$.scrollTo($('.contact_scroll'), 1000);});
+                //SQUARE MAIN BUTTON SCROLL TO ABOUT ME SECTION
+                $('.pulsating_arrow').click(function() {$.scrollTo($('.abilities_scroll'), 700);});
+                //SCROLL REVERSE TO UP SECTION
+                $('.page_up_arrow').click(function() {$.scrollTo($('body'), 1000);});
+                //SCROLL SHOW/HIDE SECTION
+                $(window).scroll(function() {
+                    if($(this).scrollTop()>800) $('.page_up_arrow').fadeIn("slow");
+                    else $('.page_up_arrow').fadeOut("slow"); });
+            });
+        </script>
+    <!--END OF JQUERY & JS SECTION-->
+</head>
+<body>
+    <!--THIS HTML, CSS AND JAVASCRIPT CODE IS OWNED BY MILOSZ GILGA. COPYRIGHT 2020-2021. ALL RIGHTS RESERVED.-->
+    <!--REVERSE PAGE UP BUTTON-->
+    <div class="page_up_arrow"><i class="fas fa-angle-up"></i></div>
+    <!--BACKGROUND JS ANIMATION SECTION-->
+    <div id="particles-js"></div>
+        <script type="text/javascript" src="js/particles.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    <script name="particles_preferences">
+        particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('particles.json loaded...'); });
+   </script>    
+    <!--HAMBURGER MENU SECTION-->
+    <nav role="navigation">
+        <div id="menuToggle"><input type="checkbox"/>
+        <span></span>
+            <span></span>
+        <span></span>
+    <div class="ul" id="menu">
+            <div class="small_menu1">
+                <div class="small_menu_style">
+                    <i class="fas fa-home menu_start hover_effect"></i>
+                </div>
+            <div class="small_menu_style">
+                <i class="fas fa-award menu_abilities hover_effect"></i>
+            </div>
+                <div class="small_menu_style">
+                    <i class="fas fa-tools menu_services hover_effect"></i>
+                </div>
+            <div class="small_menu_style">
+                <i class="fas fa-id-card menu_aboutme hover_effect"></i>
+            </div>
+                <div class="small_menu_style">
+                    <i class="fas fa-briefcase menu_portfolio hover_effect"></i>
+                </div>
+            <div class="small_menu_style">
+                <i class="fas fa-comment-dots menu_form hover_effect"></i>
+            </div>
+                <div class="small_menu_style">
+                    <i class="fas fa-phone-square menu_contact hover_effect"></i>
+                </div>
+            <div class="small_menu_style arrow_onclick">
+                <i class="fas fa-angle-double-left hover_effect rotate" onclick="toggleIcon2(this)"></i>
+            </div>
+        </div>   
+        <div class="small_menu2">
+            <div class="small_menu2_txt">
+                <div class="hover_effect menu_start menu_start_txt">START</div></div>
+            <div class="small_menu2_txt">
+                <div class="hover_effect menu_abilities menu_abilities_txt">O MOICH UMIEJĘTNOŚCIACH</div></div>
+            <div class="small_menu2_txt">
+                <div class="hover_effect menu_services menu_services_txt">MOJE USŁUGI</div></div>
+            <div class="small_menu2_txt">
+                <div class="hover_effect menu_aboutme menu_aboutme_txt">O MNIE</div></div>
+            <div class="small_menu2_txt">
+                <div class="hover_effect menu_portfolio menu_portfolio_txt">MOJE REALIZACJE</div></div>
+            <div class="small_menu2_txt">
+                <div class="hover_effect menu_form menu_form_txt">?MASZ PYTANIE</div></div>
+            <div class="small_menu2_txt">
+                <div class="hover_effect menu_contact_txt menu_contact">KONTAKT</div></div>
+            <div class="small_menu2_txt">
+                <div>KOMPAKTOWE MENU</div></div>
+        </div>               
+    </div> 
+</div>    
+    </nav>
+    <!--HEADER ONLY DESKTOP SECTION-->
+    <span style="height:70px; width:100%; background-color:#080808;position:absolute;position:fixed;z-index:31;"></span>
+    <!--MAIN START SECTION-->
+    <main>
+        <div class="textuppername_style">Witaj! Jestem</div>
+        <div class="name_style">MIŁOSZ GILGA</div>
+        <div class="textundername_style">Koduję z pasji.&nbsp;&nbsp;&nbsp;Tworzę z pasją.</div>
+        <div class="smallbar_style"></div>
+        <div class="pulsating_arrow">
+            <div class="arrow_anim"><i class="arrow down"></i></div></div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-3 section2">
+                    <i class="fa fa-code"></i><span style="font-size:30px; padding-left:17px;">WEB DEVELOPER</span>
+                </div>
+                <div class="col-xl-3 section2">
+                    <i class="fas fa-paint-roller"></i><span style="font-size:30px; padding-left:17px;">WEB DESIGNER</span>
+                </div>
+                <div class="col-xl-3 section2">
+                    <i class="fas fa-palette"></i><span style="font-size:30px; padding-left:17px;">GRAPHICS DESIGNER</span>
+                </div>
+                <div class="col-xl-3 section2">
+                   <i class="fas fa-film"></i><span style="font-size:30px; padding-left:17px;">VIDEO EDITOR</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--REST OF BODY SECTION-->
+    <section>
+        <!--WHAT I CAN-->
+        <article name="what_i_can">
+            <div class="container abilities_scroll" style="position:relative; z-index:8;">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 container_main" style="font-size:60px !important;">O MOICH UMIEJĘTNOŚCIACH<br><br>
+                    <div class="line_decoration"></div></div>
+                    <div class="col-sm-12 container1">Specjalizuję się w tworzeniu jednostronnych stron internetowych tzw. wizytówek z nastawieniem na warstwę front-end, UI/UX Design i wszelkiego rodzaju grafikę użytkową (banery, loga, wizytówki, wizerunek firmy itp.). Świadczę również usługi montażu filmów i prostych animacji 2D w tym "motion design". Poniżej zobaczysz mój stopień zaawansowania w technologiach w jakich się poruszam. Aby dowiedzieć się więcej, rozwiń kafelek.</div>
+                </div>
+            </div>
+            <!--SQUARE PERCENTAGE ADVANCEMENTS SECTION-->  
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <!--HTML 5 PERCENTAGE CIRCLE SECTION-->
+                    <div class="col-md-2 container_fluid" style="z-index:20 !important;">HTML 5<br><br>
+                        <div class="flex-wrapper">
+                            <div class="single-chart">
+                        <svg viewBox="-5 -4 46 46" class="circular-chart orange">
+                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <path class="circle" stroke-dasharray="88, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.35" class="percentage">88%</text>
+                    </svg></div></div>
+                        <div id="showmenu2" onclick="showhideFunc_html()"><i class="fas fa-angle-double-down" onclick="toggleIcon1(this)"></i></div>
+                    <div id="menu2"><span style="font-family:'Teko',sans-serif !important;color:#000; font-weight:500; font-size:25px;">HTML</span> - język opisowy, zwany również językiem znaczników. Stanowi kręgosłup strony internetowej.To na nim opieraja się wszystkie pozostałe elementy.<br><br><a class="find_more_a" href="https://pl.wikipedia.org/wiki/HTML5" target="_blank">DOWIEDZ SIĘ WIĘCEJ!</a></div></div>
+                    <!--CSS 3 PERCENTAGE CIRCLE SECTION-->
+                    <div class="col-md-2 container_fluid" style="z-index:19 !important;">CSS 3<br><br>
+                        <div class="flex-wrapper">
+                            <div class="single-chart">
+                        <svg viewBox="-5 -4 46 46" class="circular-chart orange">
+                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <path class="circle" stroke-dasharray="76, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.35" class="percentage">76%</text>
+                    </svg></div></div>
+                        <div id="showmenu2" onclick="showhideFunc_css()"><i class="fas fa-angle-double-down" onclick="toggleIcon1(this)"></i></div>
+                    <div id="menu3"><span style="font-family:'Teko',sans-serif !important;color:#000; font-weight:500; font-size:25px;">CSS</span> - język opisowy zwany kaskadowymi arkuszami stylów. Jest to główne narzędzie do stylizowania i nadawania stronie internetowej nieszablonowego wyglądu.<br><br><a class="find_more_a" href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" target="_blank">DOWIEDZ SIĘ WIĘCEJ!</a></div></div>
+                    <!--JS PERCENTAGE CIRCLE SECTION-->
+                    <div class="col-md-2 container_fluid" style="z-index:18 !important;">JS & jQUERY<br><br>
+                        <div class="flex-wrapper">
+                            <div class="single-chart">
+                        <svg viewBox="-5 -4 46 46" class="circular-chart orange">
+                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <path class="circle" stroke-dasharray="72, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.35" class="percentage">72%</text>
+                    </svg></div></div>
+                        <div id="showmenu2" onclick="showhideFunc_js()"><i class="fas fa-angle-double-down" onclick="toggleIcon1(this)"></i></div>
+                    <div id="menu4"><span style="font-family:'Teko',sans-serif !important;color:#000; font-weight:500; font-size:25px;">JAVASCRIPT</span> - skryptowy język programowania wykorzystywany w tworzeniu stron internetowych. jQuery upraszcza kod, sprawia że staje się optymalniejszy i umożliwia tworzenie bardziej zaawansowanych animacji.<br><br><a class="find_more_a" href="https://pl.wikipedia.org/wiki/JavaScript" target="_blank">DOWIEDZ SIĘ WIĘCEJ!</a></div></div>
+                    <!--ADOBE PERCENTAGE CIRCLE SECTION-->
+                    <div class="col-md-2 container_fluid" style="z-index:17 !important;">ADOBE<br><br>
+                        <div class="flex-wrapper">
+                            <div class="single-chart">
+                        <svg viewBox="-5 -4 46 46" class="circular-chart orange">
+                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <path class="circle" stroke-dasharray="95, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.35" class="percentage">95%</text>
+                    </svg></div></div>
+                        <div id="showmenu2" onclick="showhideFunc_adobe()"><i class="fas fa-angle-double-down" onclick="toggleIcon1(this)"></i></div>
+                    <div id="menu5"><span style="font-family:'Teko',sans-serif !important;color:#000; font-weight:500; font-size:25px;">ADOBE</span> - pakiet profesjonalnych aplikacji do obróbki zdjęć, grafiki rastrowej i wektorowej, montażu filmów oraz animacji i efektów specjalnych rodem z Hollywood.<br><br><a class="find_more_a" href="https://www.adobe.com/pl/" target="_blank">DOWIEDZ SIĘ WIĘCEJ!</a></div></div>
+                </div>
+            </div>
+        </article>
+        <!--SERVICES SECTION-->
+        <article name="under_the_what_i_can">
+            <div class="container" style="position:relative; z-index:8;">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 container2">Gwarantuję nowoczesność, interaktywność i responsywność wykonywanych przeze mnie stron internetowych. W celu ich implementacji korzystam z wielu dodatków, między innym frameworku Bootstrap i biblioteki programistycznej jQuery.<br><br><br>
+                    <div class="line_decoration services_scroll"></div><br><br>
+                    <div class="under_line_decoration_txt">MOJE USŁUGI</div></div></div>
+                </div>
+        </article>
+        <!--REST OF ARTICLES-->
+        <article name="all">
+            <div style="width:100%; height:auto; position:absolute;z-index:7;" class="container-fluid">
+                <div class="row justify-content-center" style="background-color:#000000;margin-top:-80px;padding-top:180px;">
+                    <!--WEB DESIGN LINK SECTION-->
+                    <div class="col-xl-3 services_txt_style">
+                        <div><i class="fas fa-code website" style="padding-right:30px; font-size:66px; float:left;"></i>Responsywne<br>Strony Internetowe
+                        <div style="clear:both"></div>
+                        <span style="color:grey;font-size:28px; line-height:12px; letter-spacing: 1px;"><br>Projekty wykonanych przeze mnie stron, cennik oraz szczegółowe informacje na temat wykorzystywanych technologii.</span><br>
+                        <span style="color:#000;font-size:30px; line-height:12px;"><br><br><a href="#"><span class="link_style">Zobacz więcej >>></span></a></span>
+                    </div></div>
+                    <!--GRAPHICS LINK SECTION-->
+                    <div class="col-xl-3 services_txt_style">
+                        <div><i class="fas fa-paint-brush" style="padding-right:30px; font-size:66px; float:left;"></i>Grafika Użytkowa<br>i Grafika Ruchoma
+                        <div style="clear:both"></div>
+                        <span style="color:grey;font-size:28px; line-height:12px; letter-spacing: 1px;"><br>Wykonane przeze mnie grafiki oraz grafiki ruchome, cennik oraz szczegółowe informacje na temat wykorzystywanych technologii.</span><br>
+                        <span style="color:#000;font-size:30px; line-height:12px;"><br><br><a href="#"><span class="link_style">Zobacz więcej >>></span></a></span>
+                    </div></div>
+                    <!--VIDEO EDITING LINK SECTION-->
+                    <div class="col-xl-3 services_txt_style">
+                        <div><i class="fas fa-film" style="padding-right:30px; font-size:66px; float:left;"></i>Montaż Filmów i<br>Proste Animacje
+                        <div style="clear:both"></div>
+                        <span style="color:grey;font-size:28px; line-height:12px; letter-spacing: 1px;"><br>Wykonanie przeze mnie zlecenia montażowe i krótkie animacje 2D wraz z informacjami na temat wykorzystywanych technologii.</span><br>
+                        <span style="color:#000;font-size:30px; line-height:12px;"><br><br><a href="#"><span class="link_style">Zobacz więcej >>></span></a></span>
+                    </div></div></div>
+                <!--ABOUT ME SECTION-->
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 container3 aboutme_scroll" style="margin-top:-90px !important;">
+                        <div class="under_line_decoration_txt">O MNIE</div><br><br>
+                        <div class="line_decoration"></div><br>
+                    <div style="text-align:center;padding-top:40px;padding-left:60px;padding-right:60px;">Początkujący front-end web developer aspirujący na full stack web developera. W chwili obecnej student Informatyki. Prywatnie człowiek wielu pasji i zainteresowań. Domator, koneser dobrej muzyki i dobrego filmu, fan uniwersum Gwiezdnych Wojen i wszelkiego rodzaju filmów gatunku science-fiction. Esteta, perfekcjonista, fan modern-flat design. </div>
+                    <div class="circle_me">zdjecie</div><br>
+                    <div class="line_decoration portfolio_scroll"></div><br><br>
+                    <div class="under_line_decoration_txt">MOJE REALIZACJE</div>
+                </div></div>
+                <div class="row justify-content-center container4"> 
+                    <div class="col-xl-3 li_variation_style var1_por"><span style="cursor:pointer;">Wszystkie prace</span>
+                        <div class="variation_underline underline_anim1"></div>
+                    </div>
+                    <div class="col-xl-3 li_variation_style var2_por"><span style="cursor:pointer;">Strony internetowe</span>
+                        <div class="variation_underline underline_anim2"></div>
+                    </div>
+                    <div class="col-xl-3 li_variation_style var3_por"><span style="cursor:pointer;">Grafika użytkowa</span>
+                        <div class="variation_underline underline_anim3"></div>
+                    </div>
+                    <div class="col-xl-3 li_variation_style var4_por"><span style="cursor:pointer;">Montaż i animacje</span>
+                        <div class="variation_underline underline_anim4"></div>
+                    </div>
+                        <!--BOOTSTRAP SECTION ROW 1 COL 4-->
+                        <div class="col-lg-3 container_all_main_1 cont_1">
+                             <i class="fas fa-code"></i>
+                             <div class="cont_1_desc cont_desc">Moja strona wizytówka, którą teraz przeglądasz. Wykorzystałem do tego HTMLa, CSSa, skrypty jQuery do animacji i interakcji ze stroną oraz framework Bootstrap. Do obsługi formularzy napisałem prosty skrypt w PHP. Składają się na nią 3 podstrony wraz ze stroną główną. UWAGA! Strona nie powstawała przy pomocy systemu CMS i gotowych szablonów!<br><br>
+                             <a class="find_more_a" target="_blank" href="https://creativevalley.vertcore-design.pl/">SPRAWDŹ!</a>
+                             </div>
+                        </div>                  
+                        <div class="col-lg-3 container_all_main_2 cont_2">
+                             <i class="fas fa-code"></i>
+                             <div class="cont_2_desc cont_desc">Witryna wykonana dla projektu Creative Valley. Strona typu "one-page" niezwykle prosta, lecz efektowna. Do jej stworzenia użyłem HTMLa, CSSa, skryptów JavaScript i jQuery oraz frameworku Bootstrap. UWAGA! Strona nie powstała przy pomocy systemu CMS i gotowych szablonów!<br><br>
+                             <a class="find_more_a" target="_blank" href="https://creativevalley.vertcore-design.pl/">SPRAWDŹ!</a>
+                             </div>
+                        </div>
+                        <div class="col-lg-3 container_all_main_3 cont_3">
+                             <i class="fas fa-code"></i>
+                             <div class="cont_3_desc cont_desc">Strona stworzona dla firmy Vertcore Design. Zawiera 2 podstrony i stronę główną. Do jej stworzenia użyłem HTMLa, CSSa, skryptów JS i jQuery oraz frameworku Bootstrap. UWAGA! Strona nie powstała przy pomocy systemu CMS i gotowych szablonów!<br><br>
+                             <a class="find_more_a" target="_blank" href="https://vertcore-design.pl/">SPRAWDŹ!</a>
+                             </div>
+                        </div>
+                        <div class="col-lg-3 container_all_main_4 cont_4">
+                            <i class="fas fa-paint-brush"></i>
+                            <div class="cont_4_desc cont_desc">Banery wykonane dla grup wydziałowych Politechniki Śląskiej. Stworzone przy pomocy programu Adobe Photoshop.</div>
+                        </div>
+                        <!--BOOTSTRAP SECTION ROW 2 COL 4-->
+                        <div class="col-lg-3 container_all_main_5 cont_5">
+                             <i class="fas fa-paint-brush"></i>
+                             <div class="cont_5_desc cont_desc">Logo i grafiki promocyjne stworzone dla Creative Valley przy użyciu programu Adobe Photoshop i Adobe Illustrator.</div>
+                        </div>                  
+                        <div class="col-lg-3 container_all_main_6 cont_6">
+                             <i class="fas fa-paint-brush"></i>
+                             <div class="cont_6_desc cont_desc">Logo stworzone dla Vertcore Design przy użyciu programu Adobe Illustrator.</div>
+                        </div>
+                        <div class="col-lg-3 container_all_main_7 cont_7">
+                             <i class="fas fa-paint-brush"></i>
+                             <div class="cont_7_desc cont_desc">Logo stworzone dla Digititles Imagine przy użyciu programu Adobe Illustrator.</div>
+                        </div>
+                        <div class="col-lg-3 container_all_main_8 cont_8">
+                            <i class="fas fa-paint-brush"></i>
+                            <div class="cont_8_desc cont_desc">Logo Informatyki na wydziale Elektrycznym Politechniki Śląskiej wykonane na potrzeby serwera Discord. Do stworzenia użyty został program Adobe Illustrator.</div>
+                        </div> 
+                        <!--BOOTSTRAP SECTION ROW 3 COL 4
+                        <div class="col-lg-3 container_all_main_9 cont_9">
+                             <i class="fas fa-film"></i>
+                             <div class="cont_9_desc cont_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex velit, elementum in enim vitae, imperdiet vehicula dolor. Morbi eget diam aliquam, varius lacus non, posuere mi. Nam semper aliquam nulla, at imperdiet lectus efficitur et. Suspendisse sodales imperdiet egestas. Curabitur ut ligula ac diam condimentum tempus non a ipsum.</div>
+                        </div>                  
+                        <div class="col-lg-3 container_all_main_10 cont_10">
+                             <i class="fas fa-film"></i>
+                             <div class="cont_10_desc cont_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex velit, elementum in enim vitae, imperdiet vehicula dolor. Morbi eget diam aliquam, varius lacus non, posuere mi. Nam semper aliquam nulla, at imperdiet lectus efficitur et. Suspendisse sodales imperdiet egestas. Curabitur ut ligula ac diam condimentum tempus non a ipsum.</div>
+                        </div>
+                        <div class="col-lg-3 container_all_main_11 cont_11">
+                             <i class="fas fa-film"></i>
+                             <div class="cont_11_desc cont_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex velit, elementum in enim vitae, imperdiet vehicula dolor. Morbi eget diam aliquam, varius lacus non, posuere mi. Nam semper aliquam nulla, at imperdiet lectus efficitur et. Suspendisse sodales imperdiet egestas. Curabitur ut ligula ac diam condimentum tempus non a ipsum.</div>
+                        </div>
+                        <div class="col-lg-3 container_all_main_12 cont_12">
+                            <i class="fas fa-film"></i>
+                            <div class="cont_12_desc cont_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex velit, elementum in enim vitae, imperdiet vehicula dolor. Morbi eget diam aliquam, varius lacus non, posuere mi. Nam semper aliquam nulla, at imperdiet lectus efficitur et. Suspendisse sodales imperdiet egestas. Curabitur ut ligula ac diam condimentum tempus non a ipsum.</div>
+                        </div>-->
+                    </div>
+                <!--ASK FORM SECTION-->
+                <div class="row justify-content-center background_ask" name="ask_form"> 
+                    <div class="col-md-12 ask_container padding-none">
+                        <div class="col-md-8 ask_style container3 padding-none form_scroll">
+                            <div class="under_line_decoration_txt">MASZ PYTANIE?</div><br><br>
+                                <div class="line_decoration"></div>
+                            <div style="text-align:center;padding-top:40px;padding-left:60px;padding-right:60px; padding-bottom:30px;">Śmiało możesz zadać je w poniższym formularzu.</div>
+                    <!--FORM @PHP SECTION-->
+                    <form action="" method="post" enctype="">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-6">
+                                    <label class="custom-field one">
+                                        <input type="text" name="name_surname" required/>
+                                        <span class="placeholder">Imię i Nazwisko</span>
+                                    </label>
+                                </div>
+                            <div class="col-xl-6">
+                                <label class="custom-field one">
+                                    <input type="text" name="email_adress" required/>
+                                    <span class="placeholder">Adres E-mail</span>
+                                </label>
+                            </div>
+                                    </div>
+                                <div class="row justify-content-center">
+                                    <!--RADIO WEBSITES @PHP FORM SECTION-->
+                                    <div class="col-xl-4">
+                                        <input type="radio" id="website" name="radio-group" checked>
+                                            <label for="website">
+                                                <span class="radio_style">Strony Internetowe</span>
+                                            </label>
+                                        </div>
+                                    <!--RADIO GRAPHICS @PHP FORM SECTION-->
+                                    <div class="col-xl-4">
+                                         <input type="radio" id="graphics" name="radio-group">
+                                            <label for="graphics">
+                                                <span class="radio_style">Grafiki użytkowe</span>
+                                            </label>
+                                        </div>
+                                    <!--RADIO VIDEO EDITING @PHP FORM SECTION-->
+                                    <div class="col-xl-4">
+                                         <input type="radio" id="movies" name="radio-group">
+                                            <label for="movies">
+                                                <span class="radio_style">Montaż i animacje</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-12">
+                                        <label for="message" class="custom-field custom_field-type one">
+                                            <textarea type="text" name="message" id="message" cols="80" rows="4" maxlength="2000" minlength="10" required></textarea>
+                                            <span class="placeholder placeholder_type">Wiadomość od Zgłaszającego:</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div style="font-size:15px;letter-spacing:1px; color:darkgrey;line-height:27px;padding-left:20px;padding-right:20px;margin-top:60px;">Administratorem danych osobowych jest firma Linux.pl. Dane wpisane w formularzu kontaktowym będą przetwarzane w celu udzielenia odpowiedzi na przesłane zapytanie zgodnie z<a href="#" class="privacy_style"> polityką prywatności</a>.</div>
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="submit_button_style">
+                                            <i class="fas fa-paper-plane plane_icon"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div> 
+                            </form>
+                            <!--FORM @PHP SECTION END-->
+                        </div>
+                    </div>
+                </div>
+                <!--ASK FORM SECTION END-->
+                <!--PRE-FOOTER SECTION-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="row justify-content-center pre_footer_section">
+                            <!--COLUMN 1 DIVIDE 1/1-->
+                            <div class="col-lg-3 pre_footer_inside_style">
+                                <div style="margin-bottom:20px; margin-top:80px; color:#339169;">Słownik pojęć (web):</div>
+                                    <ul>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="https://pl.wikipedia.org/wiki/HTML5" target="_blank">HTML5</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" target="_blank">CSS3</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="https://pl.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="https://pl.wikipedia.org/wiki/JQuery" target="_blank">jQuery</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="https://pl.wikipedia.org/wiki/PHP" target="_blank">PHP</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="https://pl.wikipedia.org/wiki/Front-end_i_back-end" target="_blank">Front-end vs Back-end</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="https://pl.wikipedia.org/wiki/Responsive_web_design" target="_blank">Responsywność</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="https://pl.wikipedia.org/wiki/System_zarz%C4%85dzania_tre%C5%9Bci%C4%85" target="_blank">System CMS</a></li>
+                                    </ul>
+                            </div>
+                            <!--COLUMN 2 DIVIDE 1/2-->
+                            <div class="col-lg-3 pre_footer_inside_style">
+                                <div style="margin-bottom:20px; color:#339169; margin-top:80px;">Słownik pojęć (grafika):</div>
+                                    <ul>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="https://pl.wikipedia.org/wiki/Interfejs_u%C5%BCytkownika" target="_blank">UI Design</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="https://pl.wikipedia.org/wiki/User_experience" target="_blank">UX Design</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="https://en.wikipedia.org/wiki/Motion_graphics" target="_blank">Motion Design/Graphics</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="https://pl.wikipedia.org/wiki/Grafika_rastrowa" target="_blank">Grafika Rastrowa</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="https://pl.wikipedia.org/wiki/Grafika_wektorowa" target="_blank">Grafika Wektorowa</a></li>
+                                    </ul>
+                            <!--COLUMN 2 DIVIDE 2/2-->    
+                                <div style="margin-bottom:20px; margin-top:40px; color:#339169;">Moje usługi:
+                                </div>
+                                    <ul>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="#" target="_blank">Responsywne strony internetowe</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="#" target="_blank">Grafika użytkowa i grafika ruchoma</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="#" target="_blank">Motion Design</a></li>
+                                    </ul>
+                            </div>
+                            <!--COLUMN 3 DIVIDE 1/2-->
+                            <div class="col-lg-3 pre_footer_inside_style">
+                                <div style="margin:0 0 20px 0; color:#339169; margin-top:80px;">Nawigacja:</div>
+                                    <ul>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li menu_start">Start</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li menu_abilities">Moje Umiejętności</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li menu_services">Moje Usługi</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li menu_aboutme">O mnie</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li menu_portfolio">Moje Realizacje</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li menu_form">Formularz Zapytanie</a></li>
+                                    </ul>
+                            <!--COLUMN 3 DIVIDE 2/2-->
+                                <div style="margin:0 0 20px 0; color:#339169; margin-top:40px;">Formularze zgłoszeniowe:</div>
+                                    <ul>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="#" target="_blank">Strona internetowa</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="#" target="_blank">Grafika użytkowa</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="#" target="_blank">Montaż i animacja</a></li>
+                                    </ul> 
+                            </div>
+                            <!--COLUMN 4 DIVIDE 1/3-->
+                            <div class="col-lg-3 pre_footer_inside_style">
+                                <div style="margin:0 0 20px 0; color:#339169; margin-top:80px;">Informacje:</div>
+                                    <ul>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="#" target="_blank">Polityka Prywatności</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li" href="#" target="_blank">Pliki Cookies</a></li>
+                                    </ul>
+                            <!--COLUMN 4 DIVIDE 2/3-->     
+                                <div style="margin:0 0 20px 0; color:#339169; margin-top:40px;">Kontakt:</div>
+                                    <ul>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li">
+                                    <i class="fas fa-envelope" style="padding-right:10px;"></i>biuro@milosz.design.pl</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li">
+                                    <i class="fas fa-envelope" style="padding-right:10px;"></i>zamowienia@milosz.design.pl</a></li>
+                            <li style="padding:0 0 5px 14px;">
+                                <a class="description_prefooter_li">
+                                    <i class="fas fa-phone-square" style="padding-right:10px;"></i>695 309 129</a></li>
+                                    </ul>
+                                <!--COLUMN 4 DIVIDE 3/3-->
+                                <div class="pre_footer_icons">
+                                    <a href="#" target="_blank" class="pre_footer_icons_style">
+                                        <i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" target="_blank" class="pre_footer_icons_style">
+                                        <i class="fab fa-instagram"></i></a>
+                                    <a href="#" target="_blank" class="pre_footer_icons_style">
+                                        <i class="fab fa-twitter"></i></a>
+                                    <a href="#" target="_blank" class="pre_footer_icons_style">
+                                        <i class="fab fa-github"></i></a>
+                                    <a href="#" target="_blank" class="pre_footer_icons_style">
+                                        <i class="fab fa-pinterest-p"></i></a>
+                                </div>
+                            </div>
+                            <!--PRE-FOOTER SECTION END-->
+                            <!--FOOTER COPYRIGHT SECTION END-->
+                            <div class="footer_underline contact_scroll"></div>
+                            <div class="col-lg-4 footer_undertxt">
+                                Strona stworzona przez Miłosz Gilga.
+                            </div>
+                            <div class="col-lg-4 footer_undertxt">
+                                &copy 2020-2021 by Miłosz Gilga. All rights reserved.
+                            </div>
+                            <div class="col-lg-4 footer_undertxt">Ta witryna wykorzystuje pliki Cookies.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+<!--ADDT'L SCRIPTS SECTION-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
